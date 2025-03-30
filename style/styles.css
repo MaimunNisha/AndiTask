@@ -1,0 +1,273 @@
+@media only screen and (max-width: 600px) {
+    .text { font-size: 11px; }
+    .textheader { font-size: 14px; }
+}
+a{
+    text-decoration: none;
+}
+.navbar-nav .nav-item .nav-link {
+    color: black; /* Default text color */
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: red; /* Red background */
+    color: white !important; /* White text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-area {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.about-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.default-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.default-title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    padding: 0 20px; /* Adds spacing between the lines and text */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.default-title::before,
+.default-title::after {
+    content: "";
+    height: 3px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.default-title::before {
+    width: 60px; /* Default width */
+    left: 36%;
+}
+
+.default-title::after {
+    width: 60px; /* Default width */
+    right: 36%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .default-title h1 {
+        font-size: 28px; /* Reduce font size on smaller screens */
+    }
+    
+    .default-title::before,
+    .default-title::after {
+        width: 40px; /* Shorter lines on tablets */
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .default-title h1 {
+        font-size: 24px; /* Smaller font for mobile */
+        padding: 0 10px; /* Reduce spacing */
+    }
+    
+    .default-title::before,
+    .default-title::after {
+        width: 30px; /* Shorter lines for mobile */
+
+    }
+    .default-title::before {
+        left: 20%;
+    }
+    .default-title::after {
+        right: 20%;
+    }
+    
+    
+}
+
+
+.about-three-col h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: relative;
+}
+
+.about-three-col h3::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.about-three-col p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.col-md-6 >.border {
+    border: 2px solid gray; /* Adds gray border */
+    padding: 20px; /* Adds spacing inside */
+    border-radius: 20px; /* Rounds the corners */
+    height: 100%;
+}
+
+.col-md-6 ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.col-md-6 h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.col-md-6 h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.contact-section {
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.contact-section-contact-box {
+    border: #fff 1px solid;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.section-title-white h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.details ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.details ul li i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: red;
+}
+
+.social h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    margin-right: 0px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: red;
+    border: 2px solid red;
+    text-decoration: none;
+}
+
+.contact-title >span{
+    color: red;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+    .contact-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px dotted rgb(169, 163, 163);
+    margin-top: 5px;
+}
+    /* Remove List Styles */
+    .contact-details ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Style for Icon */
+    .contact-details li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    /* Icon Styling */
+    .contact-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        border: 2px solid red;
+        color: red;
+        font-size: 18px;
+    }
